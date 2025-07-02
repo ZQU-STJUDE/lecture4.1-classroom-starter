@@ -1,0 +1,95 @@
+---
+title: "Assignment_Student"
+author: "Zhuo Qu"
+date: "2025-07-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Please complete the following problems. For each counting part, clearly state which of the **four scenarios** (With/Without Replacement, Order Matters/Doesn't Matter) applies. You may use R for calculations.
+
+**Problem 1: The Code Creation  <span class="highlight-point">(4 Pts)</span>**
+
+   a) How many 5-character codes can be formed using distinct uppercase letters (A-Z, 26 letters) if the order matters? (Scenario?)
+   
+   b) How many 5-character codes can be formed using uppercase letters (A-Z) if letters can be repeated and order matters? (Scenario?)
+   
+   c) How many ways can you select a group of 5 distinct letters from the alphabet if the order of selection does not matter? (Scenario?)
+   
+   d) How many ways can you choose 5 letters from the alphabet if repetition is allowed but the order of the chosen letters does not matter (e.g., AABBC is the same as BABCA as a final collection)? (Scenario?)
+   
+
+
+**Problem 2: The Candy Store  <span class="highlight-point">(3 Pts)</span>**
+
+A candy store sells 10 different types of gummy candies. You want to buy a bag of 6 gummy candies.
+
+   a) If you pick 6 *different* types of gummy candies and the order you picked them is noted by the clerk, how many ways can this be done? (Scenario?)
+   
+   b) If you pick 6 *different* types of gummy candies and the collection of 6 is all that matters, how many ways? (Scenario?)
+   
+   c) If you can pick multiples of the same type of gummy candy and the final collection of 6 is all that matters (e.g., 3 of type A, 2 of type B, 1 of type C), how many ways? (Scenario?)
+
+
+**Problem 3: The Card Game (Probability <span class="highlight-point">(4 Pts)</span>)**
+
+You are dealt a hand of 5 cards from a standard 52-card deck.
+
+   a) How many total possible 5-card hands are there? (Scenario?) <span class="highlight-point">(1 Pt)</span>
+   
+   b) How many hands contain exactly 2 Kings and exactly 2 Queens? (Hint: You'll also need to choose one more card that is not a King or Queen). <span class="highlight-point">(1 Pt)</span>
+   
+   c) What is the probability of being dealt a hand with exactly 2 Kings and 2 Queens? <span class="highlight-point">(1 Pt)</span>
+   
+   d) What is the probability of having no Kings and no Queens? <span class="highlight-point">(1 Pt)</span>
+   
+
+**Problem 4: The Texas Hold'em Poker Game <span class="highlight-point">(10 Pts)</span>**
+
+In Texas Hold'em poker, players receive 5-card hands from a standard 52-card deck. Calculate the probabilities (as percentages) and odds against (in x : 1 format) for these hand types, ordered from most to least likely. *(1 Pt per sub-question)*
+
+ a) **No Pair (High Card) <span class="highlight-point">(1 Pt)</span>**
+Hand with no matching ranks, *no 5-card sequence*, and not all same suit.
+Example: A♠ K♦ 10♣ 7♥ 4♠
+
+b) **One Pair <span class="highlight-point">(1 Pt)</span>**
+Exactly two matching-rank cards + three unmatched-rank cards.
+Example: 10♠ 10♥ 3♦ Q♣ K♠
+
+c) **Two Pair <span class="highlight-point">(1 Pt)</span>**
+Two different pairs (two cards each of two ranks) + one unmatched card.
+Example: 9♥ 9♦ K♣ K♠ 4♥
+
+d) **Three of a Kind <span class="highlight-point">(1 Pt)</span>**
+Exactly three matching-rank cards + two differing unmatched-rank cards.
+Example: 7♠ 7♥ 7♦ 4♣ 5♠
+
+e) **Straight (excl. straight/royal flush) <span class="highlight-point">(1 Pt)</span>**
+Five sequentially ranked cards (e.g., 7-8-9-10-J or A-2-3-4-5), not all same suit.
+Example: A♥ 2♣ 3♠ 4♥ 5♠ (Ace-low)
+
+f) **Flush (excl. straight/royal flush) <span class="highlight-point">(1 Pt)</span>**
+Five same-suit cards, not in sequence.
+Example: 2♥ 4♥ 5♥ 9♥ K♥ (hearts)
+
+g) **Full House <span class="highlight-point">(1 Pt)</span>**
+Three cards of one rank + two cards of another rank.
+Example: J♥ J♦ J♠ K♣ K♠ (Jacks full of Kings)
+
+h) **Four of a Kind <span class="highlight-point">(1 Pt)</span>**
+Four matching-rank cards + one any other rank card.
+Example: 3♠ 3♥ 3♦ 3♣ 4♥ (fours threes)
+
+i) **Straight Flush (excl. royal flush) <span class="highlight-point">(1 Pt)</span>**
+Five sequentially ranked same-suit cards, not Ace-high.
+Example: 5♥ 6♥ 7♥ 8♥ 9♥ (hearts)
+
+j) **Royal Flush <span class="highlight-point">(1 Pt)</span>**
+Ace, King, Queen, Jack, Ten all same suit.
+Example: 10♦ J♦ Q♦ K♦ A♦ (diamonds)
+
+
+**Submission:** Please submit your R code and answers. Precautiously use AI is allowed, but please ensure that you understand every step, and use your own language to answer it. By the way, if you find AI's answer is different from your answer, please feel free to paste your original query, reply from AI, the model you use and share us your thoughts. That can be a bonus to add in the assignment.
