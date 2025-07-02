@@ -1,12 +1,11 @@
 ---
-title: "Assignment_Student"
+title: "Lecture4.1_Assignment_Student"
 author: "Zhuo Qu"
 date: "2025-07-02"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Please complete the following problems. For each counting part, clearly state which of the **four scenarios** (With/Without Replacement, Order Matters/Doesn't Matter) applies. You may use R for calculations.
@@ -14,14 +13,27 @@ Please complete the following problems. For each counting part, clearly state wh
 **Problem 1: The Code Creation  <span class="highlight-point">(4 Pts)</span>**
 
    a) How many 5-character codes can be formed using distinct uppercase letters (A-Z, 26 letters) if the order matters? (Scenario?)
-   
+```{r assignment 1a}
+code_a <- NA ## How many 5-character codes can be formed using distinct uppercase letters (A-Z, 26 letters) if the order matters
+```
    b) How many 5-character codes can be formed using uppercase letters (A-Z) if letters can be repeated and order matters? (Scenario?)
+```{r assignment 1b}
+code_b <- NA ## How many 5-character codes can be formed using uppercase letters (A-Z) if letters can be repeated and order matters
+
+```
    
    c) How many ways can you select a group of 5 distinct letters from the alphabet if the order of selection does not matter? (Scenario?)
-   
+```{r assignment 1c}
+code_c <- NA ## How many ways can you select a group of 5 distinct letters from the alphabet if the order of selection does not matter?
+```   
    d) How many ways can you choose 5 letters from the alphabet if repetition is allowed but the order of the chosen letters does not matter (e.g., AABBC is the same as BABCA as a final collection)? (Scenario?)
    
+ Problem 1 Answer (Only shown to lecturer's version)
+```{r assignment 1d}
 
+code_d <- NA ## How many ways can you choose 5 letters from the alphabet if repetition is allowed but the order of the chosen letters does not matter (e.g., AABBC is the same as BABCA as a final collection)? (Scenario?)
+```
+   
 
 **Problem 2: The Candy Store  <span class="highlight-point">(3 Pts)</span>**
 
@@ -29,67 +41,165 @@ A candy store sells 10 different types of gummy candies. You want to buy a bag o
 
    a) If you pick 6 *different* types of gummy candies and the order you picked them is noted by the clerk, how many ways can this be done? (Scenario?)
    
+```{r assignment 2a}
+candy_a <- NA ## If you pick 6 *different* types of gummy candies and the order you picked them is noted by the clerk, how many ways can this be done
+```
+   
    b) If you pick 6 *different* types of gummy candies and the collection of 6 is all that matters, how many ways? (Scenario?)
    
+```{r assignment 2b}
+candy_b <- NA ## If you pick 6 *different* types of gummy candies and the collection of 6 is all that matters, how many ways?
+```
    c) If you can pick multiples of the same type of gummy candy and the final collection of 6 is all that matters (e.g., 3 of type A, 2 of type B, 1 of type C), how many ways? (Scenario?)
 
+ Problem 2 Answer (Only shown to lecturer's version)   
+```{r assignment 2c}
+candy_c <- NA ## If you can pick multiples of the same type of gummy candy and the final collection of 6 is all that matters (e.g., 3 of type A, 2 of type B, 1 of type C), how many ways?
+```
 
 **Problem 3: The Card Game (Probability <span class="highlight-point">(4 Pts)</span>)**
 
 You are dealt a hand of 5 cards from a standard 52-card deck.
 
    a) How many total possible 5-card hands are there? (Scenario?) <span class="highlight-point">(1 Pt)</span>
-   
+```{r assignment 3a}
+total_hands <- NA ## How many total possible 5-card hands are there
+```
    b) How many hands contain exactly 2 Kings and exactly 2 Queens? (Hint: You'll also need to choose one more card that is not a King or Queen). <span class="highlight-point">(1 Pt)</span>
-   
+```{r assignment 3b}
+kings <- NA ## How many selections of 2 Kings out of four Kings?
+queens <- NA ## How many selections of 2 Queens out of four Queens?
+other_cards <- NA ## How many options of choosing 1 remaining card from non-King and non-Queen cards?
+favorable_b <- NA ## How many hands contain exactly 2 Kings and exactly 2 Queens?
+```   
    c) What is the probability of being dealt a hand with exactly 2 Kings and 2 Queens? <span class="highlight-point">(1 Pt)</span>
-   
+```{r assignment 3c}
+prob_c <- NA ## What is the probability of being dealt a hand with exactly 2 Kings and 2 Queens
+```   
    d) What is the probability of having no Kings and no Queens? <span class="highlight-point">(1 Pt)</span>
    
+ Problem 3 Answer (Only shown to lecturer's version)   
+```{r assignment 3d}
+no_qk <- NA ## hands of no Kings and Queens among 5 cards
+prob_d <- NA ## What is the probability of having no Kings and no Queens?
+```
 
 **Problem 4: The Texas Hold'em Poker Game <span class="highlight-point">(10 Pts)</span>**
 
-In Texas Hold'em poker, players receive 5-card hands from a standard 52-card deck. Calculate the probabilities (as percentages) and odds against (in x : 1 format) for these hand types, ordered from most to least likely. *(1 Pt per sub-question)*
+In Texas Hold'em poker, players receive 5-card hands from a standard 52-card deck. Calculate the probabilities (as percentages) and odds against (in x : 1 format) for these hand types, ordered from most to least likely. Odds are defined as probability/(1-Probability), meaning odds failures for every 1 success. *(1 Pt per sub-question)*
 
  a) **No Pair (High Card) <span class="highlight-point">(1 Pt)</span>**
 Hand with no matching ranks, *no 5-card sequence*, and not all same suit.
 Example: A♠ K♦ 10♣ 7♥ 4♠
 
+```{r assignment 4a}
+total_hands <- NA ## Total selection of one hand (five cards from 52-cards, without replacement, order does not matter)
+high_card <- NA ## Total selection of high card
+prob_high_card <- NA ## Probability of high card
+odds_high_card <- NA ## Odds of high card
+```
 b) **One Pair <span class="highlight-point">(1 Pt)</span>**
 Exactly two matching-rank cards + three unmatched-rank cards.
 Example: 10♠ 10♥ 3♦ Q♣ K♠
-
+```{r assignment 4b}
+one_pair <- NA
+prob_one_pair <- NA
+odds_one_pair <- NA
+```
 c) **Two Pair <span class="highlight-point">(1 Pt)</span>**
 Two different pairs (two cards each of two ranks) + one unmatched card.
 Example: 9♥ 9♦ K♣ K♠ 4♥
-
+```{r assignment 4c}
+two_pairs <- NA
+prob_two_pairs <- NA
+odds_two_pairs <- NA
+```
 d) **Three of a Kind <span class="highlight-point">(1 Pt)</span>**
 Exactly three matching-rank cards + two differing unmatched-rank cards.
 Example: 7♠ 7♥ 7♦ 4♣ 5♠
-
+```{r assignment 4d}
+three_kind <- NA
+prob_three_kind <- NA
+odds_three_kind <- NA
+```
 e) **Straight (excl. straight/royal flush) <span class="highlight-point">(1 Pt)</span>**
 Five sequentially ranked cards (e.g., 7-8-9-10-J or A-2-3-4-5), not all same suit.
 Example: A♥ 2♣ 3♠ 4♥ 5♠ (Ace-low)
-
+```{r assignment 4e}
+straight <- NA
+prob_straight <- NA
+odds_straight <- NA
+```
 f) **Flush (excl. straight/royal flush) <span class="highlight-point">(1 Pt)</span>**
 Five same-suit cards, not in sequence.
 Example: 2♥ 4♥ 5♥ 9♥ K♥ (hearts)
-
+```{r assignment 4f}
+flush <- NA
+prob_flush <- NA
+odds_flush <- NA
+```
 g) **Full House <span class="highlight-point">(1 Pt)</span>**
 Three cards of one rank + two cards of another rank.
 Example: J♥ J♦ J♠ K♣ K♠ (Jacks full of Kings)
-
+```{r assignment 4g}
+full_house <- NA
+prob_full_house <- NA
+odds_full_house <- NA
+```
 h) **Four of a Kind <span class="highlight-point">(1 Pt)</span>**
 Four matching-rank cards + one any other rank card.
 Example: 3♠ 3♥ 3♦ 3♣ 4♥ (fours threes)
-
+```{r assignment 4h}
+four_kind <- NA
+prob_four_kind <- NA
+odds_four_kind <- NA
+```
 i) **Straight Flush (excl. royal flush) <span class="highlight-point">(1 Pt)</span>**
 Five sequentially ranked same-suit cards, not Ace-high.
 Example: 5♥ 6♥ 7♥ 8♥ 9♥ (hearts)
-
+```{r assignment 4i}
+straight_flush <- NA
+prob_straight_flush <- NA
+odds_straight_flush <- NA
+```
 j) **Royal Flush <span class="highlight-point">(1 Pt)</span>**
 Ace, King, Queen, Jack, Ten all same suit.
 Example: 10♦ J♦ Q♦ K♦ A♦ (diamonds)
 
+Problem 4 Answer (Only shown to lecturer's version)
 
-**Submission:** Please submit your R code and answers. Precautiously use AI is allowed, but please ensure that you understand every step, and use your own language to answer it. By the way, if you find AI's answer is different from your answer, please feel free to paste your original query, reply from AI, the model you use and share us your thoughts. That can be a bonus to add in the assignment.
+```{r assignment4j}
+royal_flush <- NA
+prob_royal_flush <- NA
+odds_royal_flush <- NA
+```
+
+```{r assignment4}
+## Summary of the above probability and odds of hands in Texas Holdem
+# Hand type counts from poker combinatorics
+hands <- c(
+  "High Card" = high_card,
+  "One Pair" = one_pair,
+  "Two Pair" = two_pairs,
+  "Three of a Kind" = three_kind,
+  "Straight" = straight,
+  "Flush" = flush,
+  "Full House" = full_house,
+  "Four of a Kind" = four_kind,
+  "Straight Flush" = straight_flush,
+  "Royal Flush" = royal_flush
+)
+
+# Create results table
+results <- data.frame(
+  Hand = names(hands),
+  Count = hands,
+  Probability = round(hands / total_hands * 100, 2),
+  Odds_Against = round((total_hands - hands) / hands, 1)
+)
+
+# Print full table
+print(results)
+
+
+```
